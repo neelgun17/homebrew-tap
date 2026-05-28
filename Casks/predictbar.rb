@@ -7,6 +7,11 @@ cask "predictbar" do
   desc "Menu bar app for tracking Kalshi prediction market positions and ROI"
   homepage "https://github.com/neelgun17/PredictBar"
 
+  livecheck do
+    url :url
+    strategy :github_latest
+  end
+
   app "PredictBar.app"
 
   zap trash: "~/Library/Preferences/com.predictbar.app.plist"
