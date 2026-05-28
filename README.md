@@ -8,7 +8,13 @@ Homebrew tap for [PredictBar](https://github.com/neelgun17/PredictBar), a macOS 
 brew install --cask neelgun17/tap/predictbar
 ```
 
-Homebrew removes the quarantine attribute on install, so you won't hit the "unidentified developer" Gatekeeper prompt.
+The app is ad-hoc signed (not notarized), so macOS Gatekeeper still blocks the first launch. After installing, clear the quarantine flag once:
+
+```bash
+xattr -dr com.apple.quarantine /Applications/PredictBar.app
+```
+
+(Or launch from System Settings → Privacy & Security → "Open Anyway".)
 
 ## Upgrade
 
