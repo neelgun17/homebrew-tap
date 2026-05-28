@@ -12,6 +12,8 @@ cask "predictbar" do
     strategy :github_latest
   end
 
+  depends_on macos: :ventura
+
   app "PredictBar.app"
 
   zap trash: "~/Library/Preferences/com.predictbar.app.plist"
