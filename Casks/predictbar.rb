@@ -1,6 +1,6 @@
 cask "predictbar" do
-  version "1.2.1"
-  sha256 "e9388b4cb77b2918c94f6547540226df9ea88e8bc9943b1961fff098d2d3a1ed"
+  version "1.2.2"
+  sha256 "74b72767f1081583a7bc04f8d25804a0b37db7e6bfd458f1eb999db8c520c2ef"
 
   url "https://github.com/neelgun17/PredictBar/releases/download/v#{version}/PredictBar-v#{version}.dmg"
   name "PredictBar"
